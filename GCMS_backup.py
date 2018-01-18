@@ -20,9 +20,12 @@ def backup(date):
 
 
 def main():
+    try:
+        os.system("cd /media/rob/22C622FFC622D2B9/ && mkdir gcms_most_recent_backup")
+     except Exception:
+        pass
     backup(date)
 
 
 if __name__ == "__main__":
-    os.system("cd /media/rob/22C622FFC622D2B9/ && mkdir gcms_most_recent_backup")
     main()
